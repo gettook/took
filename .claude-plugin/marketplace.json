@@ -1,0 +1,15 @@
+{
+  "name": "took",
+  "owner": {
+    "name": "Took"
+  },
+  "description": "Local-first CLI + Claude Code plugin that coaches anyone steering AI coding agents through the RePPIT workflow (Research → Propose → Plan → Implement → Test). A coach, never an agent.",
+  "plugins": [
+    {
+      "name": "took",
+      "source": "./plugin",
+      "description": "Adds slash commands (/took:prompt, /took:diff, /took:pr-ready, and more) and pre/post-tool hooks that run the Took coach on every Claude Code session.",
+      "version": "0.1.0"
+    }
+  ]
+}
