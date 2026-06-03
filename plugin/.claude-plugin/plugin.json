@@ -13,6 +13,5 @@
     "ai-workflow",
     "claude-code",
     "hipaa"
-  ],
-  "hooks": "./hooks/hooks.json"
+  ]
 }
