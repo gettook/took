@@ -11,7 +11,7 @@
 ## Install
 
 ```sh
-npm install -g took
+npm install -g @gettook/took
 ```
 
 Initialise a repo, verify it is agent-ready, and coach your first prompt:

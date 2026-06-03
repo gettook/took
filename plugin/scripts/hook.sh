@@ -21,7 +21,7 @@ fi
 if command -v took > /dev/null 2>&1; then
   TOOK_CMD="took"
 else
-  TOOK_CMD="npx -y took"
+  TOOK_CMD="npx -y @gettook/took"
 fi
 
 exec ${TOOK_CMD} hook "${EVENT}"

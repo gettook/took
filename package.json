@@ -1,5 +1,5 @@
 {
-  "name": "took",
+  "name": "@gettook/took",
   "version": "0.1.0",
   "description": "Local-first CLI + Claude Code plugin that coaches anyone steering AI coding agents through the RePPIT workflow.",
   "type": "module",
@@ -16,7 +16,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tookbot/took.git"
+    "url": "git+https://github.com/gettook/took.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "homepage": "https://tookbot.com",
   "keywords": [
