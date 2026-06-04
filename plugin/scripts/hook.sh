@@ -5,7 +5,7 @@
 #
 # Usage (invoked by Claude Code via hooks.json):
 #   hook.sh <event>
-#   where <event> is one of: pre-tool | post-tool | user-prompt | pre-compact
+#   where <event> is one of: pre-tool | post-tool | user-prompt | pre-compact | stop
 #
 # The script prefers a globally-installed `took`; falls back to npx if not found.
 
