@@ -19,6 +19,9 @@ The *teach-why* principle: a bare warning teaches nothing. Pipp's `explain` goes
 **Anti-hallucination guarantee:**
 Citations in Pipp mode point to real, grounded sources. Took will not generate a plausible-sounding citation it can't verify. If a source isn't available, it says so.
 
+**Go deeper (Took Max):**
+`took explain --deep` gives Pipp-depth narration — plain English that defines the jargon and explains more fully. On the free/engineer tier you still get the terse answer plus a pointer to Max; on Max it goes deep automatically.
+
 Running the explanation:
 
 !took explain "$ARGUMENTS"

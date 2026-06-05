@@ -57,6 +57,7 @@ Run `took --help` for the full command list, including `xp`, `guard`, `secure`, 
 - **RePPIT loop** — Took coaches the full Research → Propose → Plan → Implement → Test cycle (and the Secure phase for regulated teams). Each command maps to a phase so you never skip the steps that matter.
 - **Two-axis governor** — Rigor scales to task size (no ceremony for a one-line fix); protection scales to operator experience (heavier scanning and plain-language explanations for non-technical builders).
 - **Agent-ready repo** — `took ready` audits your repo against the agent-readiness checklist (tests, hermetic build, documented patterns, verifiable style, AGENTS.md) and frames every gap as a thing that breaks agents.
+- **Action interceptor** — after every tool call, Took tells you in plain English what you did, what you should have done, and how to improve — surfaced as a can't-miss note and earned as XP on a real course-correction. `took explain --deep` goes deeper (Pipp-depth, on Took Max).
 
 ---
 

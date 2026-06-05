@@ -1,7 +1,7 @@
 {
   "name": "took",
-  "version": "0.1.2",
-  "description": "Took coaches AI coding agents through the RePPIT loop (Research → Propose → Plan → Implement → Test) — right in your terminal. Guards risky tool calls, catches missing tests and docs drift, scores PRs, and rewards quality judgment.",
+  "version": "0.1.3",
+  "description": "Took coaches AI coding agents through the RePPIT loop (Research → Propose → Plan → Implement → Test) — right in your terminal. Guards risky tool calls, gives a plain-English retrospective on every action (what you did · what you should have done · how to improve), catches missing tests and docs drift, scores PRs, and rewards quality judgment with XP.",
   "author": {
     "name": "Took"
   },
