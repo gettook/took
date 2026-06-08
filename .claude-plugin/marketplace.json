@@ -8,8 +8,8 @@
     {
       "name": "took",
       "source": "./plugin",
-      "description": "Adds slash commands (/took:prompt, /took:diff, /took:pr-ready, /took:explain, and more) and pre/post-tool hooks: guards risky calls and gives a plain-English retrospective on every action (what you did · should have done · how to improve, + XP) — right in your Claude Code session.",
-      "version": "0.1.3"
+      "description": "Adds slash commands (/took:prompt, /took:diff, /took:pr-ready, /took:explain, and more) and pre/post-tool hooks: guards risky calls and gives a plain-English retrospective on every action (what you did · should have done · how to improve, + XP) — right in your Claude Code session. Auto-syncs your derived XP + readiness to your dashboard once you're logged in.",
+      "version": "0.1.4"
     }
   ]
 }
