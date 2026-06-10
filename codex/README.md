@@ -37,9 +37,18 @@ codex plugin add took@took
 `codex plugin list` should now show `took@took  installed, enabled`.
 
 > **Why clone first?** This marketplace lives in the `codex/` subdirectory of the repo
-> (the repo root hosts the Claude Code marketplace). Codex resolves a marketplace from the
-> directory you pass to `marketplace add`, so pointing it at the cloned `codex/` directory is
-> the verified install path.
+> (the repo root hosts the Claude Code marketplace), and Codex resolves Git-source
+> marketplaces **only at the repo root** — verified live against Codex `0.137.0`:
+>
+> - `codex plugin marketplace add gettook/took` succeeds, but it picks up the repo-root
+>   `.claude-plugin/marketplace.json` (Codex's Claude-marketplace compatibility fallback) and
+>   installs the **Claude Code package** from [`../plugin`](../plugin), whose hooks reference
+>   `${CLAUDE_PLUGIN_ROOT}` — not this Codex-native package.
+> - `--sparse codex` does not re-root the marketplace either; it fails with
+>   "marketplace root does not contain a supported manifest".
+>
+> Pointing `marketplace add` at the cloned `codex/` directory installs this Codex-native
+> package (validated by Codex's own plugin schema) and is the verified install path.
 
 ### 3. One-time hook trust (Codex's designed security flow)
 
