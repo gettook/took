@@ -1,6 +1,6 @@
 {
   "name": "took",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Took coaches AI coding agents through the RePPIT loop (Research → Propose → Plan → Implement → Test) — right in your terminal. Guards risky tool calls, gives a plain-English retrospective on every action (what you did · what you should have done · how to improve), catches missing tests and docs drift, scores PRs, tracks a token-to-outcome cost ledger (spend per task & type, context efficiency), recalls the symbols you need within a budget, rewards quality judgment with XP, and syncs your XP + readiness + cost to your dashboard automatically once you're logged in.",
   "author": {
     "name": "Took"

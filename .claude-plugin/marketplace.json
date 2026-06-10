@@ -9,7 +9,7 @@
       "name": "took",
       "source": "./plugin",
       "description": "Adds slash commands (/took:prompt, /took:diff, /took:pr-ready, /took:explain, /took:cost, /took:task, /took:recall, and more) and pre/post-tool hooks: guards risky calls and gives a plain-English retrospective on every action (what you did · should have done · how to improve, + XP) — right in your Claude Code session. Auto-syncs your derived XP + readiness + token-to-outcome cost ledger to your dashboard once you're logged in.",
-      "version": "0.1.5"
+      "version": "0.1.6"
     }
   ]
 }
