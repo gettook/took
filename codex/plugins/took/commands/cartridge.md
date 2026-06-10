@@ -1,5 +1,5 @@
 ---
-description: "Build a frozen, source-grounded repo cartridge — a slim context artifact (~10–20× smaller than the corpus), faithfulness-gated, with a labeled savings estimate."
+description: "Build a frozen, source-grounded repo cartridge — a slim context artifact (compression ratio reported per build as a labeled estimate; 18.8× in the reference PoC run), faithfulness-gated, with a labeled savings estimate."
 argument-hint: "[build|status] (e.g. build --budget 24000, build --strict)"
 allowed-tools:
   - Bash
