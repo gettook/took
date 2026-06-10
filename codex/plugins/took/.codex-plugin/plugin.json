@@ -1,0 +1,33 @@
+{
+  "name": "took",
+  "version": "0.1.5",
+  "description": "Took coaches AI coding agents through the RePPIT loop (Research → Propose → Plan → Implement → Test) — right in your terminal. Guards risky tool calls, gives a plain-English retrospective on every action, catches missing tests and docs drift, scores PRs, and rewards quality judgment with XP.",
+  "author": {
+    "name": "Took",
+    "url": "https://tookbot.com"
+  },
+  "homepage": "https://tookbot.com",
+  "keywords": [
+    "reppit",
+    "coach",
+    "agent-ready",
+    "ai-workflow",
+    "codex"
+  ],
+  "interface": {
+    "displayName": "Took",
+    "shortDescription": "Coach your coding agent through RePPIT.",
+    "longDescription": "Took is a local-first coach for anyone steering an AI coding agent. It guards risky tool calls, narrates every action in plain English (what you did, what you should have done, how to improve), catches missing tests and docs drift, scores PR readiness, and rewards quality judgment with XP — a coach, never an agent.",
+    "developerName": "Took",
+    "category": "Productivity",
+    "capabilities": [
+      "Hooks",
+      "Commands"
+    ],
+    "defaultPrompt": [
+      "Right-size my next task with took prompt.",
+      "Review my staged diff with took diff.",
+      "Score my PR readiness with took pr-ready."
+    ]
+  }
+}

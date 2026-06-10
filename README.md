@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Agent-Ready ✓](https://img.shields.io/badge/Agent--Ready-%E2%9C%93-brightgreen)](https://tookbot.com/agent-ready)
 
-**Took is a local-first CLI + Claude Code plugin that coaches anyone steering AI coding agents through the RePPIT workflow — Research → Propose → Plan → Implement → Test (+ Secure for regulated work).** It is a coach, never an agent: it reviews what you put in and what comes out, course-corrects before damage, and teaches you to become a better manager of AI coding agents.
+**Took is a local-first CLI + Claude Code / Codex CLI plugin that coaches anyone steering AI coding agents through the RePPIT workflow — Research → Propose → Plan → Implement → Test (+ Secure for regulated work).** It is a coach, never an agent: it reviews what you put in and what comes out, course-corrects before damage, and teaches you to become a better manager of AI coding agents.
 
 ---
 
@@ -34,6 +34,20 @@ The plugin adds slash commands and hooks directly into Claude Code so Took coach
 ```
 
 > **Note:** this repo *is* the marketplace. `.claude-plugin/marketplace.json` points at the bundled plugin in [`./plugin`](./plugin) — adding `gettook/took` clones the repo and installs it. The plugin's hooks shell out to the `took` CLI you installed above (falling back to `npx -y took`).
+
+---
+
+## Install the Codex CLI plugin
+
+Took also ships as an [OpenAI Codex CLI](https://github.com/openai/codex) plugin — same coach, same hooks and commands, packaged for Codex's marketplace format in [`./codex`](./codex):
+
+```sh
+git clone https://github.com/gettook/took.git
+codex plugin marketplace add ./took/codex
+codex plugin add took@took
+```
+
+On first use, Codex asks you to review and trust Took's hooks in its TUI ("New hook — review required") — a one-time step that is part of Codex's security model. See [`codex/README.md`](./codex/README.md) for details.
 
 ---
 

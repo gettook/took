@@ -1,0 +1,59 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CODEX_PLUGIN_ROOT}\"/scripts/hook.sh pre-tool"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CODEX_PLUGIN_ROOT}\"/scripts/hook.sh post-tool"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CODEX_PLUGIN_ROOT}\"/scripts/hook.sh user-prompt"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CODEX_PLUGIN_ROOT}\"/scripts/hook.sh pre-compact"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CODEX_PLUGIN_ROOT}\"/scripts/hook.sh stop"
+          }
+        ]
+      }
+    ]
+  }
+}
